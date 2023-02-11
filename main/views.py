@@ -50,3 +50,17 @@ class ContextView(BaseMixin, TemplateView):
     pass
 
 
+class HideView(BaseMixin, TemplateView):
+    pass
+
+
+class FromView(BaseMixin, TemplateView):
+    pass
+
+
+class FaveView(BaseMixin, TemplateView):
+    pass
+
+
+class ShowNewView(BaseMixin, TemplateView):
+    pass

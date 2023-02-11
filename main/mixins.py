@@ -20,7 +20,8 @@ class BaseMixin(TemplateView):
                 else:
                     query_params += f'{query_param}={request.GET.get(query_param)}&'
 
-        reqq = requests.get(f'https://news.ycombinator.com{request_uri}{query_params}', headers={'Content-type': 'text', 'SomeHeader': 'exists'})
+        reqq = requests.get(f'https://news.ycombinator.com{request_uri}{query_params}', headers={
+                            'Content-type': 'text', 'SomeHeader': 'exists'})
         body, title = parse_html(reqq.text)
         context = super().get_context_data(**kwargs)
         context['body'] = body

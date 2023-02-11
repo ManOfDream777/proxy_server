@@ -10,7 +10,7 @@ My time to solve this task is 15h with timeouts to read some particles from BS4 
 ## Установка и запуск
 
 ```bash
-  https://github.com/Urodec777/proxy_server.git
+git clone https://github.com/Urodec777/proxy_server.git
 ```
 Next step is creating venv
 ```bash
